@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #f2e9ff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #f2e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(images/1.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+
+.img-box:nth-child(2){
+    background: url(images/2.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box:nth-child(3){
+    background: url(images/3.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box:nth-child(4){
+    background: url(images/4.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box:nth-child(5){
+    background: url(images/8.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+.img-box:nth-child(6){
+    background: url(images/6.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.img-box h3{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+    background-color: black;
+    border-radius: 50px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.img-box:hover{
+    width: 300px;
+    cursor: pointer;;
+}
+
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+}
+
+@media (max-width: 700px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .img-box {
+        width: 200px;
+        height: 50px;
+        transition: width 0.5s;
+    }
+    .img-box:hover{
+        width: 200px;
+        height: 200px;
+        cursor: pointer;;
+    }
+
+    .img-box h3{
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+        opacity: 0;
+        transition: bottom 0.5s, opacity 0.5s;
+        background-color: black;
+        border-radius: 50px;
+        padding: 0 10px;
+        
+    }
+
+}
